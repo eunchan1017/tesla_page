@@ -139,3 +139,48 @@ hr,
     font-size: 1.8rem;
     color: #fff;
 }
+.sub-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.star {
+    color: var(--main-btn-color);
+}
+/* option 태그는 html과 브라우저가 아니라 OS에서 담당하는 친구이기 때문에 못바꾼다.
+그렇기에 나는 통일성을 위해 input 폰트 변화 또한 바꾸지 않겠다 여기서 placeholder를 
+안쓰던가 select태그를 쓰지 않는 선택지가 있는데 나는 전자를 선택하겠다. */
+input::placeholder {
+    font-family: Pretendard;
+    color: #000;
+}
+
+input::-webkit-input-placeholder {
+    font-family: Pretendard;
+    color: #000;
+}
+
+input:-ms-input-placeholder {
+    font-family: Pretendard;
+    color: #000;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #000;
+    /* border-radius: 4px; */
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label::before {
+    background: var(--main-btn-color) url(../images/check-icon.png) no-repeat 50%;
+    border: 2px solid var(--main-btn-color);
+}
+label {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
