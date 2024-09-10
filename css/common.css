@@ -1,0 +1,141 @@
+@charset 'utf-8';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+:root {
+    --white-color: #fff;
+    --main-btn-color: #ff1515;
+    --black-color: #000;
+    --text-color: #666;
+}
+html {
+    font-size: 100%; /* fz100p = 16px */
+    font-size: 62.5%; /* fz62.5 = 10px = 1rem*/
+    scroll-behavior: smooth;
+}
+body {
+    font: 1.6rem/1.5 Pretendard, sans-serif;
+    color: var(--black-color);
+    text-transform: capitalize;
+    word-break: keep-all; /* wbka  */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+hr,
+.hidden {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.inner {
+    /* w134.4r+m0-a+bg */
+    width: 172rem;
+    margin: 0 auto;
+    /* background: rgba(255, 255, 0, 0.3); */
+}
+#header {
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.logo a {
+    display: block;
+    width: 18rem;
+    height: 10rem;
+}
+.logo figure img {
+    width: 18rem;
+    height: 10rem;
+}
+.gnb {
+    /* width: 120rem; */
+    display: flex;
+    /* margin-left: auto; */
+    margin-left: 5rem;
+}
+.gnb a {
+    display: block;
+    font-weight: 700;
+    font-size: 2.4rem;
+    /* border: 1px solid #000; */
+    height: 5rem;
+    padding: 10px 60px;
+}
+.util-menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.util-menu a {
+    display: block;
+    width: 6rem;
+    /* background: #000; */
+    /* padding: 1.5rem; */
+}
+.util-menu a img {
+    width: 4rem;
+    height: 4rem;
+}
+#footer {
+    background: #000;
+    width: 100%;
+}
+.footer-con {
+    padding: 7rem 0 8rem;
+    width: 93.2rem;
+    background: #000;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-logo {
+    width: 19rem;
+    height: 17rem;
+    margin: 0 auto;
+}
+.footer-title {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.footer-title li a {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.footer-txt {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.copyright {
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+}

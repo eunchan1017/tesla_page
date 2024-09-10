@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>welcome to tesla</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/sub.css" />
+    </head>
+    <body>
+        <a href="#main" class="hidden">본문 바로가기</a>
+        <!-- header#header+main#main+footer#footer -->
+        <!-- start : header -->
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <!-- start : logo -->
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img src="./images/tesla_logo_icon_167878.svg" alt="tesla" />
+                        </a>
+                    </h1>
+                    <!-- //end : logo -->
+                    <!-- start : gnb -->
+                    <ul class="gnb">
+                        <li><a href="#">모델</a></li>
+                        <li><a href="#">기술</a></li>
+                        <li><a href="#">충전</a></li>
+                        <li><a href="#">회사정보</a></li>
+                    </ul>
+                    <!-- //end : gnb -->
+                    <!-- start : search -->
+                    <div class="util-menu">
+                        <a href="#" class="search">
+                            <img src="./images/ico-search.png" alt="search" />
+                        </a>
+                        <a href="#" class="login">
+                            <img src="./images/ico-login.png" alt="login" />
+                        </a>
+                    </div>
+                    <!-- //end : accession -->
+                </nav>
+            </div>
+        </header>
+        <!-- //end : header -->
+
+        <!-- start : main -->
+        <main id="main">
+            <!-- .breadcrumb+.title+.info+.lable+.model_select+.information+a.submit -->
+            <div class="inner">
+                <ul class="breadcrumb_list">
+                    <li>홈</li>
+                    <li>차량</li>
+                    <li>시승신청</li>
+                </ul>
+                <div class="page-title">
+                    <h2>시승신청</h2>
+                    <p>전기차의 미래, 직접 경험해보세요.</p>
+                </div>
+                <p>체크(*)된 항목은 필수 입력 사항입니다.</p>
+                <div class="agree">
+                    <h3>서비스 이용 동의*</h3>
+                    <ul class="agree-list">
+                        <li>
+                            <input type="checkbox" id="checkbox-agree1" />
+                            <label id="checkbox-agree1">
+                                (필수) 시승차 이용 및 서비스 이용에 따른 주요 고지사항 및 이용약관 안내
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox-agree2" />
+                            <label id="checkbox-agree2">(필수) 개인정보 수집 및 이용안내</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox-agree3" />
+                            <label id="checkbox-agree3">
+                                (선택) 차량구입 관련 상담 및 각종 정보제공 안내 (마케팅 활용 및 광고성 정보 전송)
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="drive-models">
+                    <h3>1.시승 모델 *</h3>
+                    <ul class="drive-models-list">
+                        <li><a href="#">Model 3</a></li>
+                        <li><a href="#">Model S</a></li>
+                        <li><a href="#">Model X</a></li>
+                        <li><a href="#">Model Y</a></li>
+                    </ul>
+                    <div class="visual">
+                        <figure>
+                            <img src="./images/sub-visual-model_3.jpg" alt="sub-visual-model_3" />
+                        </figure>
+                        <h4>가족, 도로 여행 및 출퇴근에 적합한 스포츠 세단</h4>
+                    </div>
+                </div>
+                <div class="information">
+                    <h3>2.연락처 *</h3>
+                    <form action="#">
+                        <div class="information-commonness">
+                            <label for="name-kr">성명 (한글)</label>
+                            <input type="text" placeholder="성명(한글)을 입력해주세요." id="name-kr" />
+                        </div>
+
+                        <div class="information-commonness">
+                            <label for="name-en">이름 (영문)</label>
+                            <input type="password" placeholder="이름(영문)을 입력해주세요." id="name-en" />
+                        </div>
+
+                        <div class="information-commonness">
+                            <label for="first-name-en">성 (영문)</label>
+                            <input type="text" placeholder="성(영문)을 입력해주세요." id="first-name-en" />
+                        </div>
+
+                        <div class="information-commonness email">
+                            <label for="email">이메일</label>
+                            <input type="email" placeholder="이메일을 입력해주세요." id="email" />
+                            <select>
+                                <option value="#">@email.com</option>
+                                <option value="#">@gmail.com</option>
+                                <option value="#">@naver.com</option>
+                            </select>
+                        </div>
+
+                        <div class="information-commonness">
+                            <label for="phone">전화번호</label>
+                            <input type="tel" placeholder="전화번호를 입력해주세요." id="phone" />
+                        </div>
+
+                        <div class="information-commonness">
+                            <label for="do">도</label>
+                            <select id="do">
+                                <option value="#">서울특별시</option>
+                                <option value="#">부산광역시</option>
+                                <option value="#">대구광역시</option>
+                                <option value="#">인천광역시</option>
+                                <option value="#">광주광역시</option>
+                                <option value="#">울산광역시</option>
+                                <option value="#">세종특별자치시</option>
+                                <option value="#">경기도</option>
+                                <option value="#">강원도</option>
+                                <option value="#">충청북도</option>
+                                <option value="#">충청남도</option>
+                                <option value="#">전라북도</option>
+                                <option value="#">전라남도</option>
+                                <option value="#">경상북도</option>
+                                <option value="#">경상남도</option>
+                                <option value="#">제주특별자치도</option>
+                            </select>
+                        </div>
+
+                        <div class="information-commonness">
+                            <label for="city">시/구/군</label>
+                            <select id="city">
+                                <option value="#">서울특별시</option>
+                                <option value="#">부산광역시</option>
+                                <option value="#">대구광역시</option>
+                                <option value="#">인천광역시</option>
+                                <option value="#">광주광역시</option>
+                                <option value="#">울산광역시</option>
+                                <option value="#">세종특별자치시</option>
+                                <option value="#">경기도</option>
+                                <option value="#">강원도</option>
+                                <option value="#">충청북도</option>
+                                <option value="#">충청남도</option>
+                                <option value="#">전라북도</option>
+                                <option value="#">전라남도</option>
+                                <option value="#">경상북도</option>
+                                <option value="#">경상남도</option>
+                                <option value="#">제주특별자치도</option>
+                            </select>
+                        </div>
+
+                        <div class="information-commonness">
+                            <label for="zone">지역</label>
+                            <select id="zone">
+                                <option value="#">대한민국</option>
+                                <option value="#">미국</option>
+                                <option value="#">일본</option>
+                                <option value="#">중국</option>
+                                <option value="#">프랑스</option>
+                                <option value="#">인도</option>
+                                <option value="#">러시아</option>
+                                <option value="#">멕시코</option>
+                                <option value="#">독일</option>
+                                <option value="#">영국</option>
+                                <option value="#">케나다</option>
+                                <option value="#">브라질</option>
+                                <option value="#">터키</option>
+                                <option value="#">몽골</option>
+                                <option value="#">호주</option>
+                                <option value="#">베트남</option>
+                            </select>
+                        </div>
+
+                        <div class="box-checkbox box1">
+                            <input type="checkbox" id="box1" />
+                            <label for="box1">에너지 제품에 대해 알아보기</label>
+                        </div>
+                        <div class="box-checkbox box2">
+                            <input type="checkbox" id="box2" />
+                            <label for="box2">Tesla 뉴스레터 구독</label>
+                        </div>
+                        <button type="submit" class="btn-submit">제출 및 다음</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- //end : main -->
+
+        <!-- start : footer -->
+        <footer id="footer">
+            <div class="footer-con">
+                <figure class="footer-logo">
+                    <img src="./images/footer-logo.png" alt="footer-logo" />
+                </figure>
+                <ul class="footer-title">
+                    <li><a href="#">개인정보 처리방침 및 법적고지</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">새 소식</a></li>
+                    <li><a href="#">위치</a></li>
+                </ul>
+                <div class="footer-txt">
+                    <p>
+                        테슬라코리아 유한회사 | 사업자등록번호 : 524-88-00237 | 데이비드존파인스타인, 케네스어니스트무어
+                        | 통신판매업
+                    </p>
+                    <p>
+                        신고: 제2016-서울강남-02964호 | 사업자정보확인 | 호스팅제공자: Tesla Inc. | 주소 : 서울특별시
+                        강남구 테헤란로
+                    </p>
+                    <p>134, 14층 | 대표전화 : 080-617-1388 | southkorea@tesla.com</p>
+                </div>
+                <strong class="copyright">Tesla &copy; 2024</strong>
+            </div>
+        </footer>
+        <!-- //end : footer -->
+    </body>
+</html>

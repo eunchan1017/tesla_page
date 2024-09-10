@@ -1,0 +1,12 @@
+@charset 'utf-8';
+.inner {
+    /* w134.4r+m0-a+bg */
+    width: 112rem;
+    margin: 0 auto;
+    background: rgba(255, 255, 0, 0.3);
+}
+#header nav {
+    color: #000;
+}
+.breadcrumb {
+}
