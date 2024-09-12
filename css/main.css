@@ -131,6 +131,11 @@
     color: #fff;
     background: #000;
 }
+.btn-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .performance-group {
     width: 100%;
     display: flex;
@@ -155,6 +160,9 @@
     height: 43.2rem;
     /* padding: 4rem; */
     /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .performance-text h4 {
     font-weight: 700;
@@ -162,7 +170,7 @@
     color: #000;
 }
 .performance-text p {
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 180%;
@@ -220,7 +228,23 @@
         height: 4rem;
     }
     .btn a {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+    .performance-group {
+        margin-top: 10rem;
+        gap: 2rem;
+    }
+    .performance-group figure img {
+        height: 26.8rem;
+    }
+    .performance-text {
+        height: 26.8rem;
+    }
+    .performance-text h4 {
+        font-size: 2.4rem;
+    }
+    .performance-text p {
+        font-size: 1.6rem;
     }
 }
 @media screen and (max-width: 430px) {
