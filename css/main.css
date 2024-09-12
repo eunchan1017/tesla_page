@@ -4,28 +4,38 @@
 .visual {
     width: 100%;
     background: #000;
-    /* max-width: 192rem; */
-    max-height: 90rem;
+    aspect-ratio: 1/0.46875;
     margin: 0 auto;
     position: relative;
 }
-.visual figure {
+.visual video {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.visual figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.visual::after {
+    content: "";
+    position: absolute;
+    /* t0+l0+r0+b0 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.6;
+
+    /* 마우스와 관계없는 요소로 만들기 */
+    pointer-events: none;
+    user-select: none;
 }
 .visual-title {
     position: absolute;
-    /* background: #f00; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
+    z-index: 1;
 }
 .visual-title h2 {
     font-size: 6rem;
@@ -59,38 +69,40 @@
     text-align: center;
     color: #000;
     margin-top: 12rem;
-    /* position: relative;
-    z-index: 3; */
 }
 .model-list {
+    width: 100%;
     margin-top: 8rem;
     display: flex;
     flex-wrap: wrap;
-    height: 109.6rem;
-    /* gap: 4rem; */
+    /* height: 109.6rem; */
+    aspect-ratio: 1/0.6372093023255814;
     gap: 2.906976744186047%;
 }
 .model-list li {
     /* width: 54rem; */
     width: 31.3953488372093%;
-    height: 52.3rem;
+    /* height: 52.3rem; */
+    height: 47.71897810218978%;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 .model-list li figure {
     margin: 0 auto;
+    /* width: 47rem; */
+    width: 87.03703703703704%;
+    /* height: 29.1rem; */
+    height: 55.64053537284895%;
 }
 .model-list li figure img {
-    width: 47rem;
-    height: 29.1rem;
     object-fit: contain;
     display: block;
     margin: 0 auto;
 }
 .model-list li h4 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: clamp(1rem, 1.5625vw, 3rem);
     text-align: center;
     color: #000;
     margin-top: 5rem;
@@ -98,7 +110,7 @@
 .btn {
     width: 100%;
     display: flex;
-    height: 5.7rem;
+    aspect-ratio: 1/0.1089;
     justify-content: center;
     gap: 2rem;
     text-align: center;
@@ -110,7 +122,8 @@
     width: 37.03703703703704%;
     height: 100%;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: clamp(1rem, 1.041666666666667vw, 2rem);
+    /* 1.041666666666667 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,6 +154,7 @@
     display: flex;
     justify-content: space-between;
     gap: 5rem;
+    height: 43.2rem;
     margin-top: 20rem;
 }
 .performance-group .battery {
@@ -148,11 +162,12 @@
 }
 .performance-group figure {
     width: 100%;
+    height: 100%;
 }
 .performance-group figure img {
     width: 83.5rem;
     width: 100%;
-    height: 43.2rem;
+    height: 100%;
 }
 .performance-text {
     width: 83.5rem;
@@ -166,13 +181,13 @@
 }
 .performance-text h4 {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: clamp(2rem, 2.083vw, 4rem);
     color: #000;
 }
 .performance-text p {
     /* margin-top: 4rem; */
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: clamp(1rem, 1.25vw, 2.4rem);
     line-height: 180%;
 }
 .performance .charge {
@@ -194,58 +209,4 @@
     color: var(--main-btn-color);
     background: #fff;
     border: 3px solid var(--main-btn-color);
-}
-
-@media screen and (max-width: 1024px) {
-    .inner {
-        width: 96.4rem;
-        width: 94.140625%;
-    }
-    .visual-title h2 {
-        font-size: 4rem;
-    }
-    .visual-title p {
-        font-size: 1.6rem;
-    }
-    .visual-title a {
-        margin-top: 2rem;
-    }
-    .models h3 {
-        margin-top: 6rem;
-        font-size: 3.5rem;
-    }
-    .model-list {
-        margin-top: 5rem;
-        height: 141rem;
-        justify-content: space-between;
-    }
-    .model-list li {
-        width: 47.40663900414938%;
-        height: 32.4113475177305%;
-    }
-    .btn {
-        margin: 0;
-        height: 4rem;
-    }
-    .btn a {
-        font-size: 1.6rem;
-    }
-    .performance-group {
-        margin-top: 10rem;
-        gap: 2rem;
-    }
-    .performance-group figure img {
-        height: 26.8rem;
-    }
-    .performance-text {
-        height: 26.8rem;
-    }
-    .performance-text h4 {
-        font-size: 2.4rem;
-    }
-    .performance-text p {
-        font-size: 1.6rem;
-    }
-}
-@media screen and (max-width: 430px) {
 }
