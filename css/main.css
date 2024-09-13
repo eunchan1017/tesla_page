@@ -70,15 +70,15 @@
 /* model 시작 */
 .models h3 {
     /* font-size: 5rem; */
-    font-size: clamp(3rem, 4vw, 5rem);
+    font-size: clamp(4rem, 4vw, 5rem);
     font-weight: 700;
     text-align: center;
     color: #000;
-    margin-top: 12rem;
+    margin-top: 6.25vw;
 }
 .model-list {
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 4.166666666666667vw;
     display: flex;
     flex-wrap: wrap;
     /* height: 109.6rem; */
@@ -94,6 +94,11 @@
     aspect-ratio: 1/0.9682203389830508;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 .model-list li figure {
     margin: 0 auto;
@@ -104,15 +109,14 @@
 }
 .model-list li figure img {
     object-fit: contain;
-    display: block;
-    margin: 0 auto;
+    /* display: block;
+    margin: 0 auto; */
 }
 .model-list li h4 {
     font-weight: 700;
-    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-size: 3rem;
     text-align: center;
     color: #000;
-    margin-top: 5rem;
 }
 .btn {
     width: 100%;
@@ -121,7 +125,6 @@
     justify-content: center;
     gap: 2rem;
     text-align: center;
-    margin-top: 2rem;
     /* margin: 4rem; */
 }
 .btn a {
@@ -144,9 +147,9 @@
     border: 1px solid var(--main-btn-color);
 }
 .btn .btn-drive {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 100%;
     color: #fff;
     background: #000;
@@ -157,34 +160,25 @@
     align-items: center;
 }
 .performance-group {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-    aspect-ratio: 1/0.2511627906976744;
-    margin-top: 20rem;
-}
-.performance-group .battery {
-    margin-top: 16rem;
+    margin-top: 10.41666666666667vw;
 }
 .performance-group figure {
-    width: 100%;
-    height: 100%;
-}
-.performance-group figure img {
     width: 83.5rem;
-    width: 100%;
-    height: 100%;
+    width: 48.5465%;
 }
 .performance-text {
     width: 83.5rem;
-    width: 100%;
-    height: 100%;
+    width: 48.5465%;
     /* padding: 4rem; */
     /* background: #000; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    /* gap: 5rem; */
+    gap: 2.6042vw;
 }
 .performance-text h4 {
     font-weight: 700;
@@ -199,15 +193,17 @@
 }
 .performance .charge {
     display: block;
-    width: 43rem;
+    width: 100%;
     height: 8rem;
     font-weight: 700;
     font-size: 3rem;
     background: var(--main-btn-color);
     color: #fff;
-    margin: 170px auto;
+    margin: 8.854166666666667vw auto;
     text-align: center;
-    padding: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
     /* border: 1px solid rgba(0, 0, 0, 0.3); */
     transition: 0.4s;
@@ -223,5 +219,24 @@
     }
     .visual-title h2 {
         font-size: 6rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .model-list li {
+        flex-basis: 100%;
+    }
+    .performance-group {
+        flex-direction: column;
+    }
+    .performance-text {
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+    }
+    .performance-group > figure {
+        width: 100%;
+    }
+    .performance-group.battery {
+        flex-direction: column-reverse;
     }
 }
