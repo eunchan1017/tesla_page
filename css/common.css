@@ -80,20 +80,26 @@ hr,
     font-weight: 700;
     font-size: 2.4rem;
     height: 5rem;
-    padding: 10px 60px;
+    padding: 1rem 6rem;
 }
 .util-menu {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    gap: 3rem;
 }
-.util-menu a {
+.util-menu .search {
     display: block;
-    padding-left: 3rem;
-}
-.util-menu a img {
     width: 4.5rem;
     height: 4.5rem;
+}
+.util-menu .login {
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.btn-menu {
+    display: none;
 }
 #footer {
     background: #000;
@@ -182,5 +188,16 @@ label {
 @media screen and (max-width: 1720px) {
     .inner {
         width: 90%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .gnb {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
+        width: 4.5rem;
+        height: 4.5rem;
+        background: url(../images/ico-menu.svg) no-repeat 0 0 / cover;
     }
 }
