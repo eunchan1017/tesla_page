@@ -214,7 +214,10 @@
     border: 3px solid var(--main-btn-color);
 }
 @media screen and (max-width: 1024px) {
+    .visual-title a {
+        margin-top: 3rem;
+    }
     .model-list li h4 {
         margin-top: 2rem;
     }
-}
+} /* 깃 테스트용 주석 */
