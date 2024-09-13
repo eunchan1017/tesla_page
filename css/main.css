@@ -4,7 +4,7 @@
 .visual {
     width: 100%;
     background: #000;
-    aspect-ratio: 1/0.46875;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
 }
@@ -36,25 +36,28 @@
     text-align: center;
     color: #fff;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 .visual-title h2 {
     /* font-size: 6rem; */
-    font-size: clamp(4rem, 5vw, 6rem);
+    font-size: clamp(3rem, 4.166666666666667vw, 8rem);
     font-weight: 700;
 }
 .visual-title p {
     font-weight: 500;
-    /* font-size: 2rem; */
-    font-size: clamp(1.6rem, 1.8vw, 2rem);
+    font-size: clamp(1.8rem, 2vw, 3rem);
 }
 .visual-title a {
-    display: block;
+    width: 100%;
     height: 5rem;
     background: var(--main-btn-color);
-    padding: 0.8rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     font-size: 2rem;
-    margin-top: 5rem;
     border: 3px solid var(--main-btn-color);
     border-radius: 5px;
     transition: 0.4s;
@@ -86,8 +89,9 @@
     /* width: 54rem; */
     width: 31.3953488372093%;
     /* height: 52.3rem; */
-    height: 47.71897810218978%;
+    /* height: 47.71897810218978%; */
     background: #fff;
+    aspect-ratio: 1/0.9682203389830508;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
@@ -105,7 +109,7 @@
 }
 .model-list li h4 {
     font-weight: 700;
-    font-size: clamp(1rem, 1.5625vw, 3rem);
+    font-size: clamp(2rem, 2.5vw, 3rem);
     text-align: center;
     color: #000;
     margin-top: 5rem;
@@ -125,7 +129,7 @@
     width: 37.03703703703704%;
     height: 100%;
     font-weight: 700;
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1.8rem, 1.8vw, 2rem);
     /* 1.041666666666667 */
     display: flex;
     justify-content: center;
@@ -180,17 +184,17 @@
     /* background: #000; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .performance-text h4 {
     font-weight: 700;
-    font-size: clamp(2rem, 2.083vw, 4rem);
+    font-size: clamp(2.5rem, 3vw, 4rem);
     color: #000;
 }
 .performance-text p {
     /* margin-top: 4rem; */
     font-weight: 500;
-    font-size: clamp(1rem, 1.25vw, 2.4rem);
+    font-size: clamp(1.8rem, 2vw, 2.4rem);
     line-height: 180%;
 }
 .performance .charge {
@@ -214,10 +218,10 @@
     border: 3px solid var(--main-btn-color);
 }
 @media screen and (max-width: 1024px) {
-    .visual-title a {
-        margin-top: 3rem;
+    .model-list li {
+        flex: 1 1 40%;
     }
-    .model-list li h4 {
-        margin-top: 2rem;
+    .visual-title h2 {
+        font-size: 6rem;
     }
-} /* 깃 테스트용 주석 */
+}

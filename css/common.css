@@ -64,13 +64,8 @@ hr,
 
 .logo a {
     display: block;
-    width: 18rem;
-    /* width: 100%; */
-    height: 10rem;
-}
-.logo figure img {
-    width: 18rem;
-    height: 10rem;
+    width: 16rem;
+    height: 8rem;
 }
 .gnb {
     display: flex;
@@ -78,9 +73,9 @@ hr,
 .gnb a {
     display: block;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     height: 5rem;
-    padding: 1rem 6rem;
+    padding: 1rem 4rem;
 }
 .util-menu {
     display: flex;
@@ -88,17 +83,20 @@ hr,
     text-align: center;
     gap: 3rem;
 }
-.util-menu .search {
+.util-menu a {
     display: block;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: no-repeat 0 0 / cover;
+}
+.util-menu .search {
+    background-image: url(../images/search-line.svg);
 }
 .util-menu .login {
-    display: block;
-    width: 4.5rem;
-    height: 4.5rem;
+    background-image: url(../images/login-icon.svg);
 }
-.btn-menu {
+.util-menu .btn-menu {
+    background-image: url(../images/ico-menu.svg);
     display: none;
 }
 #footer {
@@ -191,13 +189,26 @@ label {
     }
 }
 @media screen and (max-width: 1024px) {
+    .inner {
+        width: 96.4rem;
+    }
     .gnb {
         display: none;
     }
-    .btn-menu {
+    .logo a {
         display: block;
-        width: 4.5rem;
-        height: 4.5rem;
-        background: url(../images/ico-menu.svg) no-repeat 0 0 / cover;
+        width: 16rem;
+        height: 8rem;
+    }
+    .util-menu {
+        gap: 2rem;
+    }
+    .util-menu .btn-menu {
+        display: block;
+    }
+
+    .footer-logo {
+        width: 12rem;
+        height: 10rem;
     }
 }
