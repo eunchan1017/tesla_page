@@ -1,7 +1,7 @@
 @charset 'utf-8';
 .inner {
-    /* w134.4r+m0-a+bg */
     width: 112rem;
+    /* width: 58.3333%; */
     margin: 0 auto;
     /* background: rgba(255, 255, 0, 0.3); */
 }
@@ -65,6 +65,7 @@
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .drive-models-list li a {
     display: block;
@@ -175,4 +176,17 @@
     background: #fff;
     color: var(--main-btn-color);
     cursor: pointer;
+}
+@media screen and (max-width: 1120px) {
+    .inner {
+        /* width: 98.4rem; */
+        width: 96.09375%;
+        margin: 0 auto;
+    }
+    .drive-models-list {
+        gap: 1rem;
+    }
+    .drive-models-list li a {
+        width: 23.3929vw;
+    }
 }
