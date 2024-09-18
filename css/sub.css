@@ -8,6 +8,16 @@
 #header nav {
     color: #000;
 }
+.util-menu .sub-search {
+    background-image: url(../images/ico-search.svg);
+}
+.util-menu .sub-login {
+    background-image: url(../images/ico-login.svg);
+}
+.util-menu .sub-btn-menu {
+    background-image: url(../images/menu-3-line.png);
+    display: none;
+}
 .breadcrumb_list {
     margin-top: 155px;
     text-align: center;
@@ -180,13 +190,20 @@
 @media screen and (max-width: 1120px) {
     .inner {
         /* width: 98.4rem; */
-        width: 96.09375%;
+        width: 94.1406%;
         margin: 0 auto;
     }
-    .drive-models-list {
-        gap: 1rem;
-    }
     .drive-models-list li a {
-        width: 23.3929vw;
+        width: 23vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .inner {
+        /* width: 96.4rem; */
+        width: 94.1406%;
+        margin: 0 auto;
+    }
+    .util-menu .sub-btn-menu {
+        display: block;
     }
 }
