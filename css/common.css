@@ -238,8 +238,8 @@ label {
     }
     .logo a {
         background: url(../images/tesla-logo.png) no-repeat 50% / contain;
-        width: 10rem;
-        height: 5rem;
+        width: 5rem;
+        height: 8rem;
     }
     .util-menu a {
         width: 2.4rem;
