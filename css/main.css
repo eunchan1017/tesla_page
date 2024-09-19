@@ -222,6 +222,14 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .logo a > img {
+        display: none;
+    }
+    .logo a {
+        background: url(https://img.icons8.com/?size=256&id=OinYGm0fZ470&format=png) no-repeat 50% / contain;
+        width: 10rem;
+        height: 5rem;
+    }
     .model-list li {
         flex-basis: 100%;
     }
@@ -238,5 +246,10 @@
     }
     .performance-group.battery {
         flex-direction: column-reverse;
+    }
+    .performance .charge {
+        height: 6rem;
+        font-size: 2.4rem;
+        margin: 7rem 0;
     }
 }

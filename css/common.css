@@ -86,7 +86,8 @@ hr,
 .util-menu a {
     display: block;
     width: 3.2rem;
-    height: 3.2rem;
+    aspect-ratio: 1/1;
+
     background: no-repeat 0 0 / cover;
 }
 .util-menu .search {
@@ -202,7 +203,7 @@ label {
     .logo a {
         display: block;
         width: 16rem;
-        height: 8rem;
+        aspect-ratio: 1/0.5;
     }
     .util-menu {
         gap: 2rem;
@@ -229,5 +230,18 @@ label {
     }
     .copyright {
         display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo a > img {
+        display: none;
+    }
+    .logo a {
+        background: url(https://img.icons8.com/?size=256&id=OinYGm0fZ470&format=png) no-repeat 50% / contain;
+        width: 10rem;
+        height: 5rem;
+    }
+    .util-menu a {
+        width: 2.4rem;
     }
 }
