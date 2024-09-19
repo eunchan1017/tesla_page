@@ -237,7 +237,7 @@ label {
         display: none;
     }
     .logo a {
-        background: url(https://img.icons8.com/?size=256&id=OinYGm0fZ470&format=png) no-repeat 50% / contain;
+        background: url(../images/tesla-logo.png) no-repeat 50% / contain;
         width: 10rem;
         height: 5rem;
     }
