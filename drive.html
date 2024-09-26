@@ -9,6 +9,25 @@
         <link rel="stylesheet" href="./css/sub.css" />
     </head>
     <body>
+        <div class="mobile-menu">
+            <!-- strong.mobile-logo>i.hidden{webfluent} -->
+            <strong class="mobile-logo">
+                <i class="hidden">tesla</i>
+            </strong>
+            <ul class="mobile-gnb">
+                <li><a href="#model">모델</a></li>
+                <li><a href="#performance">기술</a></li>
+                <li><a href="#charge">충전</a></li>
+                <li><a href="#">회사정보</a></li>
+            </ul>
+            <!-- button:button.btn-close>i.hidden{close} -->
+            <button type="button" class="btn-search">
+                <i class="hidden">search</i>
+            </button>
+            <button type="button" class="btn-close">
+                <i class="hidden">close</i>
+            </button>
+        </div>
         <a href="#main" class="hidden">본문 바로가기</a>
         <!-- header#header+main#main+footer#footer -->
         <!-- start : header -->
@@ -234,5 +253,6 @@
             </div>
         </footer>
         <!-- //end : footer -->
+        <script src="./js/sub-script.js" defer></script>
     </body>
 </html>
