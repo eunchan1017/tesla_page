@@ -105,6 +105,10 @@
     background: var(--main-btn-color);
     color: #fff;
 }
+.drive-models-list li a.active {
+    background: var(--main-btn-color);
+    color: #fff;
+}
 .visual {
     margin-top: 5.5rem;
     position: relative;

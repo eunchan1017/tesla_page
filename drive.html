@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>welcome to tesla</title>
+        <link rel="shortcut icon" href="./images/tesla-logo.png" type="image/x-icon" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/sub.css" />
@@ -18,7 +19,7 @@
                 <li><a href="#model">모델</a></li>
                 <li><a href="#performance">기술</a></li>
                 <li><a href="#charge">충전</a></li>
-                <li><a href="#">회사정보</a></li>
+                <li><a href="#footer">회사정보</a></li>
             </ul>
             <!-- button:button.btn-close>i.hidden{close} -->
             <button type="button" class="btn-search">
@@ -103,16 +104,16 @@
                     <div class="drive-models">
                         <h3 class="sub-title">1.시승 모델 <i class="star">*</i></h3>
                         <ul class="drive-models-list">
-                            <li><a href="#">Model 3</a></li>
-                            <li><a href="#">Model S</a></li>
-                            <li><a href="#">Model X</a></li>
-                            <li><a href="#">Model Y</a></li>
+                            <li><a href="#!" onclick="modelClick('model3', this)" class="active">Model 3</a></li>
+                            <li><a href="#!" onclick="modelClick('modelS', this)">Model S</a></li>
+                            <li><a href="#!" onclick="modelClick('modelX', this)">Model X</a></li>
+                            <li><a href="#!" onclick="modelClick('modelY', this)">Model Y</a></li>
                         </ul>
                         <div class="visual">
                             <figure>
-                                <img src="./images/sub-visual-model_3.jpg" alt="sub-visual-model_3" />
+                                <img src="./images/sub-visual-model3.jpg" alt="sub-visual-model3" id="model-img" />
                             </figure>
-                            <h4>가족, 도로 여행 및 출퇴근에 적합한 스포츠 세단</h4>
+                            <h4 id="model-descriptions">가족, 도로 여행 및 출퇴근에 적합한 스포츠 세단</h4>
                         </div>
                     </div>
                     <div class="information">
