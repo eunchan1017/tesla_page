@@ -90,7 +90,7 @@
     width: 100%;
 }
 .drive-models-list li a {
-    display: block;
+    /* display: block; */
     width: 26.2rem;
     height: 6rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -110,8 +110,7 @@
     color: #fff;
 }
 .visual {
-    margin-top: 5.5rem;
-    position: relative;
+    margin-top: 3.5rem;
     position: relative;
 }
 .visual figure {
@@ -151,7 +150,7 @@
     margin-top: 12rem;
 }
 .information-wrap {
-    margin-top: 6rem;
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -209,7 +208,7 @@
 }
 
 .btn-submit {
-    margin: 10rem 0;
+    margin: 8rem 0;
     width: 100%;
     height: 6rem;
     background: var(--main-btn-color);

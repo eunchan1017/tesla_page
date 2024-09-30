@@ -25,10 +25,14 @@ function modelClick(modelName, element) {
     modelDescription.textContent = descriptions[modelName];
     // 3. 모든 a 태그의 active 클래스 제거
     const links = document.querySelectorAll(".drive-models-list li a");
-    links.forEach(function (link) {
-        link.classList.remove("active");
-    });
+    for (let i = 0; i < links.length; i++) {
+        links[i].classList.remove("active");
+    }
     console.log(links);
+    // links.forEach(function (link) {
+    //     link.classList.remove("active");
+    // });
+    // console.log(links);
     // 4. 클릭된 a 태그에 active 클래스 추가
     element.classList.add("active");
 }
