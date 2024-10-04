@@ -1,3 +1,4 @@
+"use strict";
 const btnMenu = document.querySelector(".sub-btn-menu");
 const MobileMenu = document.querySelector(".mobile-menu");
 const btnClose = document.querySelector(".btn-close");
@@ -36,3 +37,39 @@ function modelClick(modelName, element) {
     // 4. 클릭된 a 태그에 active 클래스 추가
     element.classList.add("active");
 }
+const $window = $(window);
+const $header = $("header");
+const $menu = $(".gnb > li ");
+const $submenu = $(".gnb-sub");
+const duration = 300; // 0.3초
+// 메뉴에 마우스가 들어왔을 때
+$menu.on("mouseenter", function () {
+    // .stop() : 현재 진행 중인 애니메이션 즉시 중지
+    $submenu.stop().fadeIn(duration);
+    // 활성화 메뉴 Class 넣기
+    $(this).addClass("on");
+    // 서브 슬라이드 배경색 추가
+    $header.addClass("active");
+});
+// 메뉴에 마우스가 나갔을 때
+$menu.on("mouseleave", function () {
+    $submenu.stop().fadeOut(duration);
+    $(this).removeClass("on");
+    $header.removeClass("active");
+});
+// 마우스 휠을 조작했을 때
+$window.on("wheel", function (e) {
+    console.log(e);
+
+    // if (e.originalEvent.wheelDelta > 0) {
+    //     // 마우스 휠을 올렸을 때
+    //     $header.removeClass("hide");
+    // } else {
+    //     // 마우스 휠을 내렸을 때
+    //     $header.addClass("hide");
+    // }
+
+    // 삼항조건연산자
+    // 조건 ? 참일때 동작 : 거짖일때 동작
+    e.originalEvent.wheelDelta > 0 ? $header.removeClass("hide") : $header.addClass("hide");
+});
