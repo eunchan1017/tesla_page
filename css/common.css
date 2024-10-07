@@ -150,8 +150,14 @@ header.hide {
 .util-menu .search {
     background-image: url(../images/search-line.svg);
 }
+.util-menu.active .search {
+    background-image: url(../images/ico-search.svg);
+}
 .util-menu .login {
     background-image: url(../images/login-icon.svg);
+}
+.util-menu.active .login {
+    background-image: url(../images/ico-login.svg);
 }
 .util-menu .btn-menu {
     background-image: url(../images/ico-menu.svg);
