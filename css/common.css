@@ -124,11 +124,17 @@ header.hide {
     display: none;
 }
 .gnb-sub li a {
+    position: relative;
+    z-index: 10;
     display: block;
     /* border: 1px solid #000; */
     padding: 1rem;
     text-align: center;
     color: #000;
+    background: #fff;
+}
+.gnb-sub li a:hover {
+    background: rgba(163, 157, 157, 0.5);
 }
 .gnb > li.on {
     background: var(--main-btn-color);
