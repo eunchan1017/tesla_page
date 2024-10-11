@@ -5,12 +5,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>테슬라 | 메인 페이지</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <link rel="shortcut icon" href="./images/tesla-logo.png" type="image/x-icon" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/main.css" />
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/script.js" defer></script>
+        <script src="./js/swiper.js" defer></script>
     </head>
     <body>
         <div class="mobile-menu">
@@ -119,7 +122,97 @@
             <section class="models" id="model">
                 <div class="inner">
                     <h3>Models</h3>
-                    <ul class="model-list">
+
+                    <div class="model-slider-wrap">
+                        <div class="swiper model-slider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="model-wrap">
+                                        <h4>Model 3</h4>
+                                        <figure>
+                                            <img src="./images/model-3.jpg" alt="model-3" />
+                                        </figure>
+                                        <div class="btn">
+                                            <a href="drive.html" class="btn-drive">시승 신청하기</a>
+                                            <a href="#" class="btn-buy">주문하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="model-wrap">
+                                        <h4>Model Y</h4>
+                                        <figure>
+                                            <img src="./images/model-Y.png" alt="model-Y" />
+                                        </figure>
+                                        <div class="btn">
+                                            <a href="drive.html" class="btn-drive">시승 신청하기</a>
+                                            <a href="#" class="btn-buy">구매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="model-wrap">
+                                        <h4>Model S</h4>
+                                        <figure>
+                                            <img src="./images/Model-S.png" alt="Model-S" />
+                                        </figure>
+                                        <div class="btn">
+                                            <a href="drive.html" class="btn-drive">시승 신청하기</a>
+                                            <a href="#" class="btn-buy">구매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="model-wrap">
+                                        <h4>Model X</h4>
+                                        <figure>
+                                            <img src="./images/Model-X.png" alt="Model-X" />
+                                        </figure>
+                                        <div class="btn">
+                                            <a href="drive.html" class="btn-drive">시승 신청하기</a>
+                                            <a href="#" class="btn-buy">구매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="model-wrap">
+                                        <h4>cybertruck</h4>
+                                        <figure>
+                                            <img src="./images/cybertruck.png" alt="cybertruck" />
+                                        </figure>
+                                        <div class="btn">
+                                            <a href="#drive.html" class="btn-drive">시승 신청하기</a>
+                                            <a href="#" class="btn-buy">구매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="model-wrap">
+                                        <h4>powerwall</h4>
+                                        <figure>
+                                            <img src="./images/powerwall.jpg" alt="powerwall" />
+                                        </figure>
+                                        <div class="btn">
+                                            <a href="drive.html" class="btn-drive">시승 신청하기</a>
+                                            <a href="#" class="btn-buy">구매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <button type="button" class="btn-prev">
+                            <img src="./images/arrow-left.png" alt="img-prev" />
+                        </button>
+                        <button type="button" class="btn-next">
+                            <img src="./images/arrow-right.png" alt="img-next" />
+                        </button>
+                    </div>
+                    <!-- <ul class="model-list">
                         <li>
                             <h4>Model 3</h4>
                             <figure>
@@ -180,7 +273,7 @@
                                 <a href="#" class="btn-buy">구매하기</a>
                             </div>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </section>
             <section class="performance" id="performance">

@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const visualSlider = new Swiper(".visual-slider", {
     // Optional parameters
     direction: "horizontal", //vertical
     loop: true,
@@ -31,6 +31,32 @@ const swiper = new Swiper(".swiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
+});
+const modelSlider = new Swiper(".model-slider", {
+    // Optional parameters
+
+    loop: true,
+    centeredSlides: true,
+    effect: "slide",
+    spaceBetween: 20,
+    slidesPerView: 3,
+    mousewheel: false,
+    // If we need pagination
+    pagination: {
+        el: ".model-slider-wrap .pagination",
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".model-slider-wrap .btn-next",
+        prevEl: ".model-slider-wrap .btn-prev",
     },
 
     // And if we need scrollbar

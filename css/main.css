@@ -76,49 +76,62 @@
     color: #000;
     margin-top: 6.25vw;
 }
-.model-list {
+.model-slider-wrap {
     width: 100%;
     margin-top: 4.166666666666667vw;
-    display: flex;
-    flex-wrap: wrap;
-    /* height: 109.6rem; */
-    aspect-ratio: 1/0.6372093023255814;
-    gap: 2.906976744186047%;
+    height: 523px;
+    position: relative;
 }
-.model-list li {
-    /* width: 54rem; */
-    width: 31.3953488372093%;
-    /* height: 52.3rem; */
-    /* height: 47.71897810218978%; */
+.btn-prev {
+    position: absolute;
+    bottom: -5.2rem;
+    left: 75rem;
     background: #fff;
-    aspect-ratio: 1/0.9682203389830508;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-next {
+    position: absolute;
+    bottom: -5.2rem;
+    left: 93.5rem;
+    background: #fff;
+    cursor: pointer;
+}
+.model-slider-wrap .pagination {
+    position: absolute;
+    bottom: -4rem;
+    display: flex;
+    justify-content: center;
+}
+.model-slider {
+    height: 100%;
+}
+.model-wrap {
+    height: 100%;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
-.model-list li figure {
+.model-slider figure {
     margin: 0 auto;
-    /* width: 47rem; */
-    width: 87.03703703703704%;
-    /* height: 29.1rem; */
-    height: 55.64053537284895%;
+    width: 47rem;
+    /* width: 87.03703703703704%; */
+    height: 29.1rem;
+    /* height: 55.64053537284895%; */
 }
-.model-list li figure img {
+.model-slider figure img {
     object-fit: contain;
-    /* display: block;
-    margin: 0 auto; */
 }
-.model-list li h4 {
+.model-slider h4 {
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
     color: #000;
 }
-.btn {
+.model-slider .btn {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -126,7 +139,12 @@
     text-align: center;
     /* margin: 4rem; */
 }
-.btn a {
+
+.model-slider .btn a:nth-child(1) {
+    color: #fff;
+    background: #000;
+}
+.model-slider .btn a {
     /* width: 20rem; */
     width: 40%;
     height: 6.4rem;
@@ -140,20 +158,13 @@
     border-radius: 5px;
     transition: 0.4s;
 }
-.btn a:hover {
+.model-slider .btn a:hover {
     background: var(--main-btn-color);
     color: #fff;
     border: 1px solid var(--main-btn-color);
 }
-.btn .btn-drive {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    height: 100%;
-    color: #fff;
-    background: #000;
-}
-.btn-buy {
+
+.model-slider .btn-buy {
     display: flex;
     justify-content: center;
     align-items: center;
